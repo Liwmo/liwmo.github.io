@@ -772,6 +772,12 @@ footer a:hover {
   color: #444;
 }
 
+#trip {
+  display: block;
+  margin: auto;
+  height: 250px;
+}
+
 div.rect {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -784,6 +790,20 @@ div.rect {
   height: 300px;
   width: 100%;
 }
+.rect span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+div.leftRect {
+  width: 50%;
+  float: left;
+}
+
+div.rightRect{
+  width: 50%;
+  float: right;
+}
 
 div.square {
   display: table;
@@ -795,43 +815,24 @@ div.square {
   font-size: 28pt;
   height: 300px;
 }
-
+.square span {
+  vertical-align: middle;
+  display: table-cell;
+}
 div.leftSquare {
   min-width: 200px;
   width: 48%;
   float: left;
 }
-
 div.rightSquare {
   min-width: 200px;
   width: 48%;
   float: right;
 }
 
-.square span {
-  vertical-align: middle;
-  display: table-cell;
-}
-
-div.leftRect {
-  width: 50%;
-  float: left;
-}
-
-div.rightRect{
-  width: 50%;
-  float: right;
-}
-
 div.rect:hover, div.square:hover {
   opacity: 0.7;
   color: black;
-}
-
-.rect span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
 }
 
 div#about{
