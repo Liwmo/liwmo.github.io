@@ -27,6 +27,7 @@ description: The read me page of Jekyll.
 Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](https://pages.github.com), which you can use to host sites right from your GitHub repositories.
 
 ## Philosophy
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1507448209620!6m8!1m7!1sxveCv-9TE4YXuYVd7q3AEg!2m2!1d44.34113458961325!2d6.857884756335238!3f135.90640697364665!4f-46.35339039307856!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 Jekyll does what you tell it to do — no more, no less. It doesn't try to outsmart users by making bold assumptions, nor does it burden them with needless complexity and configuration. Put simply, Jekyll gets out of your way and allows you to concentrate on what truly matters: your content.
 
