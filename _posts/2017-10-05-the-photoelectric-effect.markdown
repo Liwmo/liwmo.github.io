@@ -2,7 +2,7 @@
 layout: post
 title:  "The Photoelectric Effect"
 date:   2017-10-05 14:10:51 +0800
-categories: Physics
+categories: Education Physics
 tags: physics lab education demo
 excerpt_separator: <!--more-->
 ---
@@ -55,7 +55,7 @@ Hertz concluded that "...I confine myself at present to communicating the result
 
 1. We've set up a lamp to shine over the negatively-charged metal plate. There's a [really neat adjustable lightbulb][6] where you can change the color of the light. In addition, it comes with a dimmer so you can crank the intensity up or down to your liking. 
 
-2. On the other end is an electron collector. Notice that it's positively charged so that the electrons will be attracted to it. This can be accomplished by hooking up a variable power supply in series with the circuit shown below. Let's just pretend it's already hidden behind the ammeter.
+2. On the other end is an electron collector. Notice that it's positively charged so that electrons will be attracted to it. This can be accomplished by hooking up a variable power supply in series with the circuit shown below. Let's just pretend it's already hidden behind the ammeter.
 
 3. If you need to reset everything to the initial setup, don't worry, we've hired a lab assistant. Simply click the "rerun" button in the lower right corner. 
 
@@ -77,9 +77,9 @@ Hertz concluded that "...I confine myself at present to communicating the result
 4. Double the light intensity (you can assume that slider values scale linearly from 0% to 100% brightness). What is the new current? Feel free to repeat this procedure with various starting points. With this knowledge, what does the relationship between current and intensity look like?
 
 ## Break Time
-Prior to the 20th century, Max Planck had already speculated that electromagnetic energy was *quantized*. That is, energy could only take on discrete values given by $$E=hf$$ where $$f$$ represents frequency and $$h \approx 4.136 \cdot 10^{-15} \text{ eV} \cdot \text{s}$$ is a number we now call Planck's constant. Although he had only used this as a "mathematical trick" to get sensible results, Albert Einstein used this observation in order to explain the photoelectric effect. 
+Prior to the 20th century, Max Planck had already hinted at the fact that electromagnetic energy was *quantized*. That is, energy took on *discrete* values given by $$E=hf$$, where $$f$$ represents frequency and $$h \approx 4.136 \cdot 10^{-15} \text{ eV} \cdot \text{s}$$ is a number we now call Planck's constant. Planck only applied this "mathematical trick" in an attempt to get sensible results, but Albert Einstein saw this as the key to understanding the photoelectric effect. 
 
-But, before we move on to the explanation, let's take some time to acknowledge how counter-intuitive it was (and still is) for nature to be discretized. Sure, one can count the number of items, say 5 chairs, and note that counting numbers are discrete. However, in our physical world, you're still able to saw a chair in half and get 1/2 a chair, 0.3692 chairs, or any other continuous value (even though at some point, I suppose we could debate what a chair looks like). The food we eat is not quantized and we think of heights as continuous numbers; we don't grow in exact 0.5 inch increments. 
+Before we move on to the explanation, let's take some time to acknowledge how counter-intuitive it was (and still is) for nature to be discretized. Sure, one can count the number of items, say 5 chairs, and note that counting numbers are discrete. However, in our physical world, you're still able to saw a chair in half and get 1/2 a chair, 0.3692 chairs, or any other continuous value (even though at some point, I suppose we could debate what a chair looks like). The food we eat is not quantized and we think of heights as continuous numbers; we don't grow in exact 0.5 inch increments. 
 
 With that aside, we're well on our way to the quirkiness of modern physics. Let's think of our experiment as a collision. Then, according to the law of conservation of energy:
 
@@ -99,7 +99,7 @@ where $$ hf $$ represents our *photon* (a quanta of EM energy) before the collis
 
 5. Let's say we try to apply a potential difference between the plate and collector so that it's just enough to stop an electron from reaching the collector. This *stopping voltage* $$ V_0 $$ is found to be $$0.72 \text{ mV}$$. In our setup, we're using photons with an angular frequency of $$\omega = 5.4 \cdot 10^{-15} \text{ s}^{-1}$$ and a silver sample, which has a work function that depends on the face of the crystal (see resource below). Determine the corresponding face.
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/MSa7/18?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/MSa7/latest?lite=true"></iframe>
 
 That's it! The photoelectric effect demonstrated the particle-like properties of light and eventually gave way to the [wave-particle duality of photons][10]. To conclude, here's a short video of a physical experiment:
 
