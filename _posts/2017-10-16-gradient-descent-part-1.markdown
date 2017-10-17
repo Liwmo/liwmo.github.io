@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Finding the perfect cup of coffee with gradient descent (part 1)"
 date:   2017-10-16 14:10:51 +0800
 categories: Education Programming

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "The Photoelectric Effect"
 date:   2017-10-05 14:10:51 +0800
 categories: Education Physics

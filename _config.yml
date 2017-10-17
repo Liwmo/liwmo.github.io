@@ -24,5 +24,6 @@ paginate_path: "/blog/page:num/"
 highlighter: rouge
 markdown: kramdown
 gems: ['jekyll-paginate']
-
+disqus: warrenli-me
+comments: true
 exclude: ['README.md', 'LICENSE', "*.bak"]
