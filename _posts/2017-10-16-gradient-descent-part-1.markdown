@@ -82,7 +82,7 @@ where $$m$$ represents the number of training examples. Let's rewrite this as th
 
 $$ J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x_i) - y_i)^2.$$
 
-Even though this looks a bit strange, it's the same equation. We're just going to rename $$J$$ to be our *cost function*, which takes in $$\theta_0$$ and $$\theta_1$$ as parameters. Similarly, $$\hat{y}$$ is going to be a function of $$x$$ given some theta parameters. As for that extra 2...you'll see in moment. All we have to do now is to find the values of theta that minimize our cost function. In other words, take steps in the steepest downhill direction until we reach the bottom. This direction is determined by the gradient, $$\nabla J$$ (i.e. involves taking derivatives along both axes). I thought about $$\LaTeX$$ing the derivation, but opted for an "old(er)-school" way instead:
+Even though this looks a bit strange, it's the same equation. We're just going to rename $$J$$ to be our *cost function*, which takes in $$\theta_0$$ and $$\theta_1$$ as parameters. Similarly, $$\hat{y}$$ is going to be a function of $$x$$ given some theta parameters. As for that extra 2...you'll see in moment. All we have to do now is to find the values of theta that minimize our cost function. In other words, take steps in the steepest downhill direction until we reach the bottom. This direction is determined by the gradient, $$\nabla J$$ (which involves taking derivatives, or finding slopes, along both axes). I thought about $$\LaTeX$$ing the derivation, but opted for an "old(er)-school" way instead:
 
 <img style="display: block; margin: 0 auto; height: 480px" src="/assets/images/grad_descent_2.png">
 
