@@ -48,7 +48,7 @@ We'll represent the probability of winning as $$\theta$$, and so the probability
 Now that we've found $$\theta$$, recall that the binomial distribution is an appropriate model since we have $$n$$ independent events with two possible outcomes $$x=\{0, 1\}$$ and fixed probabilities:
 
 $$
-\text{Bin}(x; \theta, n) = \theta^{x} (1-\theta)^{n-x}
+\text{Bin}(x; \theta, n) = {n \choose x} \theta^{x} (1-\theta)^{n-x}
 $$
 
 Let's say we play a single game. How likely is it that we lose?
@@ -153,7 +153,7 @@ function myFunction(clicked_id){
 }
 </script>
 
-Now, update your prior and [plot the posterior](#code) (part 2). Try overlaying both graphs and taking a look at the result. Does it make sense? Is it what you expected? All right, time to reconvene. Here are my findings: `wins: 44, losses: 256`. Go ahead and update your results once more and then report the final posterior distribution.
+Now, update your prior then [plot the likelihood and posterior](#code) (part 2). Try overlaying all three graphs and view the results. Do they make sense? Is it what you expected? All right, time to reconvene. Here are my findings: `wins: 44, losses: 256`. Go ahead and update your results once more and then report the final posterior distribution.
 
 ### Casino Investigator: Analysis
 
@@ -169,7 +169,7 @@ What do you notice?
 
 $$\theta=0.2$$ is outside our HPD and we certainly have reason to be suspicious, especially when you consider some of the statistics for other casinos. Take a look at the [public report for August 2017][10]. Most of the electronic gaming machines have a payout of nearly 90% or more. 
 
-Fortunately, with your findings, a spot inspection was approved to analyze the slot machine's [programming][11]; the probability of winning was set to 16% (do double-check this yourself). Busted! Ironically, even without the hefty fine, Atlantic City Casino would have been but a *fictitious* memory anyway. With such low-stake and low-payoff games, they could attract neither the frequent risk-taker nor the casual newcomer. It's reputation plummeted alongside its profits, and with that came it's final chapter, [Chapter 13][12].
+Fortunately, with your findings, a spot inspection was approved to analyze the slot machine's [programming][11]; the probability of winning was set below 20% (do double-check the exact value yourself). Busted! Ironically, even without the hefty fine, Atlantic City Casino would have been but a *fictitious* memory anyway. With such low-stake and low-payoff games, they could attract neither the frequent risk-taker nor the casual newcomer. It's reputation plummeted alongside its profits, and with that came it's final chapter, [Chapter 13][12].
 
 [1]:https://www.coursera.org/learn/bayesian-statistics
 [2]:https://stats.stackexchange.com/questions/2272/whats-the-difference-between-a-confidence-interval-and-a-credible-interval
