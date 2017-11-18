@@ -8,7 +8,7 @@ tags: statistics bayesian math education
 excerpt_separator: <!--more-->
 ---
 
-First, let me start off with what this post __is not__. It is not a thorough discussion into the arguments between Frequentists and Bayesians. With that said, I'll provide a resource at the end in order to highlight the differences between these two views and give you a reason to care about Bayesian statistics. I delved into this subject myself not too long ago using a course on [Coursera][1] (that I highly recommend), and this is my attempt to introduce and summarize some of the fundamental ideas.
+First, let me start off with what this post __is not__. It is not a thorough discussion into the arguments between Frequentists and Bayesians. With that said, I'll provide a resource at the end in order to highlight the differences between these two views and give you a reason to care about Bayesian statistics. I delved into this subject myself not too long ago using a course on [Coursera][1] that I highly recommend, and this is my attempt to introduce and summarize some of the fundamental ideas.
 
 The Bayesian model is an important paradigm that should be part of an introductory statistics course, yet when I took my university's equivalent of "Stats 101," we didn't even make it to good ol' NHST (null hypothesis significance testing). Furthermore, a quick Google search doesn't seem to reveal a lot of "friendly" guides akin to Khan Academy for basic statistics and Paul's Online Math Notes for calculus. There are some posts, slideshows, and long pdf textbooks that are pretty good, but I find myself glazing through blocks of formality, ~~convincing~~ fooling myself that I understand the concepts, and then losing interest like a kid in high school just waiting for the bell to ring. Ideally this post will contribute a tad more edutainment value. 
 <!--more-->
@@ -26,7 +26,7 @@ With that out of the way, here's a Veratasium video to introduce the topic and b
 
 In the comments section, several people noted that the choice of prior probability was misleading. Specifically, since the patient had shown symptoms and seen a doctor, it doesn't seem appropriate to set $$P(\text{having the disease})$$ to be the proportion of the entire population with the disease. This is a fair point which we'll address in the quiz below.
 
-As stated in the video, Bayesian statistics doesn't tell you about how to pick your prior, and clearly those beliefs will affect your predictions. This might lead you to think that the whole process must be subjective and worthless! Well, not so fast. As this video demonstrates, you're free to pick whatever prior you'd like, but merely convincing your YouTube audience that the choice is justified can be tricky enough, let alone some scientific journal committee. Also, keep in mind that although we try to be as consistent and logical as possible, statistics does inherently involve some level of subjectivity from choosing the right model to interpreting the results. Nonetheless, it remains a very powerful tool for making sense of the world around us. 
+As stated in the video, Bayesian statistics doesn't tell you about how to pick your prior, and clearly those beliefs will affect your predictions. This might lead you to think that the whole process must be subjective and worthless! Well, not so fast. As this video demonstrates, you're free to pick whatever prior you'd like, but merely convincing your YouTube audience that the choice is justified can be tricky enough, let alone some scientific committee. Also, keep in mind that although we try to be as consistent and logical as possible, statistics does inherently involve some level of subjectivity from choosing the right model to interpreting the results. Nonetheless, it remains a very powerful tool for making sense of the world around us. 
 
 Furthermore, although one has to put some thought into selecting a prior, our beliefs will change as we collect more data. In practice, if there's enough data, this information will overwhelm any initial biases in our prior. Even in cases where this doesn't apply, Bayesian statistics provides us the tools to clearly lay out our assumptions and then see how answers depend on those assumptions. Now, if all this still seems too hand-wavy and imprecise at the moment, don't worry, we'll make these ideas concrete in the following sections. Before we continue, take some time to make sure you can apply these basic rules of probability.
 
@@ -74,7 +74,7 @@ A few important notes: it looks intimidating, but upon closer inspection, it's f
 Go ahead and play around with this distribution to get a sense of what it looks like (part 1 only). Hold $$\alpha$$ constant and vary $$\beta$$, then swap. What do you notice? What happens if you change $$\alpha$$ and $$\beta$$ together, maintaining the same ratio?
 
 <a name="code"></a>
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/Mw7g/latest?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Beta-Distribution?lite=true"></iframe>
 
 Progress at last! We finally have a way of selecting a more detailed description of our beliefs. Now onto actually calculating the posterior:
 
@@ -161,7 +161,7 @@ We can now use our posterior distribution in order to make predictions about wha
 
 <img style="height: 300px" src="/assets/images/bayes_5.png"/>
 
-This is an analogue to the confidence interval, but they have very [different interpretations][2] (this is a genuinely great read). In order to do so, we'll be using the `scipy.stats` module. Take a look at the [documentation][9] (scroll down to the modules), and then complete part 3 of the [code snippet above](#code).
+This is an analogue to the confidence interval, but they have very [different interpretations][2] (this is a great read). In order to do so, we'll be using the `scipy.stats` module. Take a look at the [documentation][9] (scroll down to the modules), and then complete part 3 of the [code snippet above](#code).
 
 What do you notice?
 

@@ -8,7 +8,7 @@ tags: markov music education math statistics
 excerpt_separator: <!--more-->
 ---
 
-Last time, I talked about [Bayesian statistics][1]. This will be a continuation of that post, based on yet another topic I've tried to learn on my own. The only difference is that we're spicing up the title with alliteration and switching up the theme: this post will be centered around Halloween, so get ready for some spooky music and literature (costumes are optional).
+Previously, I talked about [Bayesian statistics][1]. This will be a continuation of that post, based on yet another topic I've tried to learn on my own. The only difference is that we're spicing up the title with alliteration and switching up the theme: this post will be centered around Halloween, so get ready for some spooky music and literature (costumes are optional).
 
 Recall that we worked really hard to show that a beta prior could account for a fair range of beliefs and had a nice analytical solution (i.e. it was possible to integrate that pesky denominator). Unfortunately, even with this discovery, you don't have to get too creative to come up with situations that we *can't* adequately describe. For instance, what if we have a bimodal distribution? That is, say there's a class where you expect a cluster of A's, a group of C's, and not much else in between. A beta distribution certainly can't capture this "double hump". Fortunately, we have a solution. Take a look at $$\text{Beta}(5, 5)$$ (figure b) below. Note that we can *discretize* and approximate this distribution using 25 points (figure a), or however many you'd like. 
 
@@ -39,7 +39,7 @@ What if we start with a [rook ♖][2] in the corner?
 
 > <p class="spoiler">The rook can move to 14 different positions regardless of where it starts. Thus, the stationary distribution is 1/64 for all states, and so it will take 64 hops to return.</p>
 
-If you have some computer science background, a Markov chain is just a graph where nodes are states in the state space and edges refer to probabilities of transitioning from one state to another. To gain intuition with this idea, let's compose some music. If you're uncomfortable with musical notation, don't fret, we'll keep it simple. Just use this [reference][4] and take a few minutes to [memorize a few positions on the staff line][3]. Afterwards, listen an excerpt from *Oh Susanna* by Stephen Foster:
+If you have some computer science background, a Markov chain is just a graph where nodes are states in the state space and edges refer to probabilities of transitioning from one state to another. To gain intuition with this idea, let's compose some music. If you're uncomfortable with musical notation, don't fret, we'll keep it basic. Just use this [reference][4] and take some time to [memorize a few positions on the staff line][3]. Afterwards, listen an excerpt from *Oh Susanna* by Stephen Foster:
 
 <iframe src="https://trinket.io/embed/music/4876c8b380" width="100%" height="230" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
@@ -68,7 +68,7 @@ One way we can create music is to simply count the frequency of each note, divid
 
 Here's a sample of our "zeroth-order" *Oh Susanna* spin-off:
 <iframe src="https://trinket.io/embed/music/9ae9bb6421" width="100%" height="220" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-This doesn't really resemble our original tune, and even though it's not terrible we could do better. The problem is that music typically follows some larger patterns, but we're just pulling random notes from the same key. Instead, what if we included some context by choosing the next note based on our memory of the previous one? 
+This doesn't really resemble our original tune, and even though it's not terrible sounding, we could do better. The problem is that music typically follows some bigger patterns, but we're just pulling random notes from the same key. Instead, what if we included some context by choosing the next note based on our memory of the previous one? 
 
 In other words, we'll want to make a table with $$ P(x_n | x_{n-1}) $$.
 <img src='/assets/images/mcmc_2.png'/>
@@ -114,7 +114,7 @@ Note that we merely need to calculate the *unnormalized* posterior distribution 
 <img src="/assets/images/mcmc_4.png"/>
 <img src="/assets/images/mcmc_5.png"/>
 
-There are still a few open questions. For instance, how do we know there aren't other stable states? How long does it take to converge? How do we know that this stationary distribution even exists? To answer these questions and more, here are some of the resources I used while trying to write this article: a [blog entry][8], a [pdf document][9] (that discusses the section below), and [this textbook with a bunch of dogs on the cover][10]. Some of them are fairly technical, but they are understandable with enough time and scratch paper.
+There are still a few open questions. For instance, how do we know there aren't other stable states? How long does it take to converge? How do we know that this stationary distribution even exists? To answer these questions and more, here are some of the resources I used while trying to write this article: a [blog entry][8], a [pdf document][9] (that discusses the section below), and [this textbook with a bunch of dogs on the cover][10]. Some of them are fairly technical, yet understandable with enough time and scratch paper.
 
 ### Murder Mystery 
 
@@ -122,13 +122,13 @@ To wrap this up, here's a fun application of the Metropolis algorithm. In the Sh
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Dancing_men.svg/346px-Dancing_men.svg.png"/>
 
-Turns out, this is a substitution cipher where each stick figure represents a letter. Assuming we have one figure per letter, this would correspond to 26! permutations. Consequently, cracking the code with brute force is not a great option. Instead, let's use the Metropolis algorithm. To get a matrix of transitions $$M$$, we can use the same approach as the musical notes, but count letters from some English text (in this case, *War and Peace*). Our state space will be the set of mappings $$f$$ from codes to letters. In order to select a neighbor, randomly transpose two symbols (making sure they're not the same ones). Finally, we'll compute a "plausibility" as follows:
+Turns out, this is a substitution cipher where each stick figure represents a letter. Assuming we have one figure per letter, this would correspond to 26! permutations. Consequently, cracking the code with brute force is not a feasible option. Instead, let's use the Metropolis algorithm. To get a matrix of transitions $$M$$, we can use the same approach as the musical notes, but count letters from some English text (in this case, *War and Peace*). Our state space will be the set of mappings $$f$$ from codes to letters. In order to select a neighbor, randomly transpose two symbols (making sure they're not the same ones). Finally, we'll compute a "plausibility" as follows:
 
 $$
 P(f) = \prod_{i} M(f(x_i), f(x_{i+1}))
 $$
 
-As a quick side note, these values are going to quickly blow up, so in our actual implementation we'll use the log plausibility, which also allows us to replace repeated multiplication with addition.
+As a quick side note, we run the risk of overflow and round-off errors since these values are going to quickly blow up. So in our actual implementation, we'll use the log plausibility, which also allows us to replace repeated multiplication with addition.
 
 $$
 \log{(P(f))} = \sum_{i} \log{(M(f(x_i), f(x_{i+1})))}
@@ -138,17 +138,17 @@ The move probability then becomes
 
 $$ P_{move} = \min{\bigg(\exp{ (\log{P(\theta_{prop})} - \log{P(\theta_{curr})} }), 1 \bigg)}.$$
 
-The idea behind this definition is that if a mapping results in a decoded message with similar frequencies to our English text, it's probably the right one (or close to it). Important caveat: we don't want an entire sample. Just keep track of the representative mapping that results in the highest plausibility score. Here's an example with six letters. I ignored punctuation and then tallied in our usual fashion.
+The idea behind this definition is that if a mapping results in a decoded message with similar frequencies to our English reference text, then it's probably the right one (or close to it). Important caveat: we don't want an entire sample. Just keep track of the representative mapping that results in the highest plausibility score. Here's an example with six letters. I ignored punctuation and then tallied in the usual fashion.
 
 <img src="/assets/images/mcmc_6.png"/>
 
-Notice that I multiplied all values by 10 and changed all the 0s to 1s. This is because we're working with some really limited data. Thus, many letter combinations will have 0 frequency making it hard to compare plausibilities. However, this shouldn't be a big deal with a sufficiently long training text, and hopefully the procedure still makes reasonable sense. 
+Notice that I multiplied all values by 10 and changed all the 0s to 1s. This is because we're working with some really limited data. Thus, many letter combinations will have 0 frequency making it hard to compare plausibilities. However, this won't be a problem with sufficiently long training text. 
 
 Now, read the story [here][11] and observe how Mr. Holmes cracks the code with a frequency attack and deductive reasoning. Then, come back and take a look at how our algorithmic approach stacks up when decrypting an excerpt from *Hound of the Baskervilles*. Happy Halloween! 
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/Nmpn/latest?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Substitution-Cipher-Metropolis-Algorithm?lite=true"></iframe>
 
-In case you want a challenge, here's a longer message to decipher below. Fair word of warning, if you blindly assign each new symbol you encounter to a letter, you're going to run out of letters. The explanation is given in the story, so I strongly suggest reading it first. Even if you can figure out "the trick" yourself, I'd still recommend reading the story for fun. 
+In case you want a challenge, here's a longer message to decipher below. Fair word of warning: if you blindly assign each new symbol you encounter to a letter, you're going to run out of letters. The explanation is given in the passage, so I strongly suggest reading it first. Even if you can figure out "the trick" yourself, I'd still recommend reading the story for fun. 
 
 <img src="/assets/images/ciphertext.png"/>
 

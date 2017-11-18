@@ -7,11 +7,11 @@ categories: Education Physics
 tags: physics lab education demo
 excerpt_separator: <!--more-->
 ---
-A while back, I created [a small demo][1] on Khan Academy. Since I've decided to use this blog to post educational material (and other things that I've yet to decide on), I figured that I may as well take the time to share and flesh out a mini lesson plan while I'm at it. Of course, after I found a way to embed Processing.js, I realized that the default angle mode is in radians while I had specified everything in degrees. As a result, the CodePen snippet below has some slight (somewhat hacky) modifications from the one I posted on Khan Academy, but it's mostly identical. Either way, this is a good reminder to 1.) use radians from now on, and 2.) maybe work on factoring out all those literals into constant variables so that I don't have to go on a programmer's version of hide-and-go seek. With that out of the way, onto the lab!
+A while back, I created [a small demo][1] on Khan Academy. Since I've decided to use this blog to post educational material (and other things that I have yet to decide on), I figured that I may as well take the time to share and flesh out a mini lesson plan. Of course, after I found a way to embed Processing.js, I realized that the default angle mode is in radians while Khan Academy defaults to degrees. As a result, the CodePen snippet below has some hacky-looking modifications from the original, but it's mostly identical. Either way, this is a good reminder to 1.) use radians from now on, and 2.) work on factoring out more constant variables so that I don't have to go on a programmer's version of hide-and-go seek. With that mental note out of the way, onto the lab!
 <!--more-->
 ## Background 
 
-There are already lots of great resources explaining the [history][2] behind the photoelectric effect and the phenomenon itself. Consequently, in an attempt to provide something with a small twist, I've decided to opt for an "exploratory" approach. With that said, I'll still provide a brief recap so that we can "stand on the shoulders of giants". 
+There are already lots of great resources explaining the [history][2] behind the photoelectric effect and the phenomenon itself. Consequently, in an attempt to provide something with a twist, I've decided to opt for an exploratory approach. With that said, I'll still provide a brief recap so that we can "stand on the shoulders of giants". 
 
 Once upon a time, there was a great light debate. On one side was the wave theory of light, and on the other side was the particle theory. Christiaan Huygens, a Dutch physicist, argued that light behaved as a wave and that each point of a wavefront was itself a source of radiation that propagated outwards with the same frequency and phase. He published this result in 1678, now known as Huygens' Principle, in his *[Traité de la Lumière][3]* (*Treatise on Light*). 
 
@@ -80,7 +80,7 @@ Hertz concluded that "...I confine myself at present to communicating the result
 ## Break Time
 Prior to the 20th century, Max Planck had already hinted at the fact that electromagnetic energy was *quantized*. That is, energy took on *discrete* values given by $$E=hf$$, where $$f$$ represents frequency and $$h \approx 4.136 \cdot 10^{-15} \text{ eV} \cdot \text{s}$$ is a number we now call Planck's constant. Planck only applied this "mathematical trick" in an attempt to get sensible results, but Albert Einstein saw this as the key to understanding the photoelectric effect. 
 
-Before we move on to the explanation, let's take some time to acknowledge how counter-intuitive it was (and still is) for nature to be discretized. Sure, one can count the number of items, say 5 chairs, and note that counting numbers are discrete. However, in our physical world, you're still able to saw a chair in half and get 1/2 a chair, 0.3692 chairs, or any other continuous value (even though at some point, I suppose we could debate what a chair looks like). The food we eat is not quantized and we think of heights as continuous numbers; we don't grow in exact 0.5 inch increments. 
+Before we move on to the explanation, let's take some time to acknowledge how counter-intuitive it was (and still is) for nature to be discretized. Sure, one can count number of items, say 5 apples, and note that counting numbers are discrete. However, in our physical world, you're still able to cut an apple in half and get 1/2 an apple, 0.3692 apples, or any other continuous value. The food we eat is not quantized and we think of heights as continuous numbers; we don't grow in exact 0.5 inch increments. 
 
 With that aside, we're well on our way to the quirkiness of modern physics. Let's think of our experiment as a collision. Then, according to the law of conservation of energy:
 
@@ -96,11 +96,11 @@ where $$ hf $$ represents our *photon* (a quanta of EM energy) before the collis
 
 3. For question 5, what is the velocity of the photoelectron in km/s?
 
-4. A photon with a momentum of [$$0.005 \frac{\text{keV}}{\text{c}}$$][8] has just enough energy to eject an electron from some material. Indicate the most likely [transition metal][9] with which this material is composed.
+4. A photon with a momentum of [$$0.005 \frac{\text{keV}}{\text{c}}$$][8] has just enough energy to eject an electron from some material. Indicate the [transition metal][9] with which this material is most likely composed.
 
 5. Let's say we try to apply a potential difference between the plate and collector so that it's just enough to stop an electron from reaching the collector. This *stopping voltage* $$ V_0 $$ is found to be $$0.72 \text{ mV}$$. In our setup, we're using photons with an angular frequency of $$\omega = 5.4 \cdot 10^{-15} \text{ s}^{-1}$$ and a silver sample, which has a work function that depends on the face of the crystal (see resource below). Determine the corresponding face.
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/MSa7/latest?lite=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Photoelectric-Effect-Quiz?lite=true"></iframe>
 
 That's it! The photoelectric effect demonstrated the particle-like properties of light and eventually gave way to the [wave-particle duality of photons][10]. To conclude, here's a short video of a physical experiment:
 
