@@ -17,13 +17,13 @@ We know how to perform a linear regression, but how do we tackle interesting non
 
 ### Multivariable Gradient Descent 
 
-Note that the relationship looks somewhat quadratic. Conseqently, we can describe the relationship between price per cup $$x$$ and total revenue $$R$$ as:
+Note that the relationship looks somewhat quadratic. Consequently, we can describe the relationship between price per cup $$x$$ and total revenue $$R$$ as:
 
 $$
 R = \theta_0 + \theta_1 x + \theta_2 x^2,
 $$
 
-where $$\theta_0, \theta_1,$$ and $$\theta_2$$ are parameters. Hopefully this situation sounds familar; maybe we can use gradient descent in order to determine what those parameters should be. Of course, we only worked with a single variable last time, so we'll need to generalize to multiple variables. Fortunately, this task is not too difficult and we'll provide a concrete example shortly. Given a relationship $$\hat{y} = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + \ldots + \theta_n x_n$$ our modified algorithm is:
+where $$\theta_0, \theta_1,$$ and $$\theta_2$$ are parameters. Hopefully this situation sounds familiar; maybe we can use gradient descent in order to determine what those parameters should be. Of course, we only worked with a single variable last time, so we'll need to generalize to multiple variables. Fortunately, this task is not too difficult and we'll provide a concrete example shortly. Given a relationship $$\hat{y} = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + \ldots + \theta_n x_n$$ our modified algorithm is:
 
 >for $$i$$ iterations: 
 >
@@ -68,7 +68,7 @@ $$
 \end{bmatrix}.
 $$
 
-In this form, $$\mathbf{X\theta - y}$$ calculates all the errors. Special linear algebra commands such as the ones in numpy can perform these matrix operations much more efficiently than doing the equivalent task using loops. It also looks nicer: `numpy.dot(X, theta) - y`. Try coding a quadratic regression using this knowledge, and then check your implementation with the solution file. It may be helpful write out the psuedocode steps using matrices first. 
+In this form, $$\mathbf{X\theta - y}$$ calculates all the errors. Special linear algebra commands such as the ones in numpy can perform these matrix operations much more efficiently than doing the equivalent task using loops. It also looks nicer: `numpy.dot(X, theta) - y`. Try coding a quadratic regression using this knowledge, and then check your implementation with the solution file. It may be helpful write out the psuedocode using matrices first. 
 
 <a name="norm"></a>
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Gradient-Descent-Multivariable?lite=true"></iframe>
@@ -81,7 +81,7 @@ The cost function can be quite messy, and sometimes we can get stuck at local mi
 
 <img src="/assets/images/grad_descent_5.png"/>
 
-In order to dig ourselves out of this hole, just inject some randomness by training with only *one* randomly selected data point from the entire set each iteration. Unfortunately, you'll notice that the cost won't always decrease each step, and it's very "noisy" compared to our smooth curves before (figure b). You can also perform mini-batch gradient descent, which is a compromise between this method and our original one. Similar to SGD's advantages, we begin taking steps downhill without needing to look at the entire dataset, and we can break up huge datasets to fit in [RAM][2] if needed (figure c). Additionally, by training on small batches instead of single points, the noise should average out a bit prior to approaching a "good" minimum. Go ahead and try implementing mini-batch gradient descent. The [shuffle][3] function may come in particularly handy.
+In order to dig ourselves out of this hole, just inject some randomness by training with only *one* randomly selected data point from the entire set each iteration. Unfortunately, you'll notice that the cost won't always decrease each step, and it's very "noisy" compared to our smooth curves before (figure b). You can also perform mini-batch gradient descent, which is a compromise between this method and our original one. Similar to SGD's advantages, we begin taking steps downhill without needing to look at the entire dataset, and we can break up huge datasets to fit in [RAM][2] if needed (figure c). Additionally, by training on small batches instead of single points, the noise should average out a bit prior to approaching a "good" minimum. Go ahead and try to implement mini-batch gradient descent. The [shuffle][3] function may come in particularly handy.
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Stochastic-Gradient-Descent?lite=true"></iframe>
 
@@ -93,7 +93,7 @@ To see why, let's look at some 3D graphs:
 
 <img src="/assets/images/grad_descent_6.png"/>
 
-The left plot represents our [unnormalized features][4] (one is $$x$$ while the other is $$x^2$$; this is a fairly dramatic difference). Notice how elliptical and elongated the bottom is. As a result, we may take lots of tiny steps and spend forever inching towards the bottom of the basin when compared to the right-hand side. Furthermore, we may overshoot and form a little zig-zag pattern, especially around the narrow chasm. Contrast this to the ["normalized" plot][5] on the right, which takes predictable steps and always points towards the center. 
+The left plot represents [unnormalized features][4]; the axes would be $$x$$ and $$x^2$$ in our case. Notice how elliptical and elongated the base is. As a result, we will take lots of tiny steps and spend forever inching towards the bottom of the basin when compared to the right side. Furthermore, we may overshoot and form a little zig-zag pattern, especially around the narrow chasm. Contrast this to the ["normalized" plot][5] on the right, which takes predictable steps and always points towards the center. 
 
 There are a few different ways of rescaling. If you're familiar with statistics, you could always standardize the data by computing the z-score,
 
@@ -115,25 +115,27 @@ With all these enhancements out of the way, we can finally compute the price poi
 
 ### Our Winning Brew
 
-Now that we have our price, all that remains is to formulate the recipe. Personally, as a non-evil businessman, I would like to take reputation and customer satisfaction into account given that we've already tried to maximize our coffee cup price. However, if you plot reputation versus each ingredient...
+Now that we have our price, all that remains is to formulate the recipe. To do this, we'll fix the price, collect 50 additional trials, and then run a multivariable regression. Personally, as a non-evil businessman, I would like to take reputation and customer satisfaction into account given that we've already tried to maximize our coffee cup price. However, if you plot reputation versus each ingredient...
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Gradient-Descent-Coffee?lite=true"></iframe>
 
-...the more the better. So instead, let's modify our question by using some background knowledge. We know that milk is the cheapest ingredient by far ($0.05-$0.10 per cup), so we'll max out on that (2 cups per serving). Lastly, we'll make a simplifying assumption. We'll assign the same variable to both sugar and coffee (since they're on the same scales), and then solve for this variable in order to make our reputation gain marginally above 0. In math terms,
+...the more the better. Unfortunately, maximizing quantity is expensive, so we'll need to come up with some other reasonable standard. We know that milk is the cheapest ingredient by far ($0.05-$0.10 per cup), so we'll max out on that (2 cups per serving). Lastly, we'll make a simplifying assumption. We'll assign the same variable to both sugar and coffee (since they're on the same scales), and then solve for this variable in order to make our reputation gain marginally above 0. In math terms,
 
 $$
 \theta_0 + \theta_{\text{milk}}(2.0 \text{ cups}) + \theta_{\text{coffee }}x + \theta_{\text{sugar }}x > 0 = \Delta\text{Reputation }
 $$
 
-Therefore, $$x \approx 3 \text{ cups}$$. That completes the strategy! As for purchasing patterns, I only bought supplies when I was running low and could buy in bulk. After a few days, restocking became a relatively mindless ritual. Now a drumroll for the moment of truth:
+Therefore, rounding up to the nearest tenth, $$x \approx 3.0 \text{ cups}$$. That completes the strategy! As for purchasing patterns, I only bought supplies when I was running low and could buy in bulk. After a few days, restocking became a relatively mindless ritual. Now a drum roll for the moment of truth:
 
-<img src="/assets/images/coffee_shop_end.png"/>
+<img src="/assets/images/coffee_shop_end.png" width="680px"/>
 
 The proof is in the pudding, and clearly, it was good pudding. I recommend [trying it out on your own][6]. 
 
-P.S. Here's the coffee recipe in real life. I give it 3/5 for taste. 
+P.S. Here's the product in real life. For the purist, this recipe may sound like an abomination; don't worry, all I can find is cheap instant coffee. To make it Vietnamese style, substitute sugar with condensed milk. I give it 7/10 for taste. 
 
-When we factor in the Starbucks-inspired price, it's most certainly a ripoff. Nonetheless, our virtual customers seem to enjoy it, so to each their own. Until next time.
+<img src="/assets/images/coffee.JPG" width="680px"/>
+
+However, when we factor in the Starbucks-inspired price, it's most certainly a ripoff. Nonetheless, our virtual customers seem to enjoy it, so to each their own. Until next time.
 
 [1]: {% post_url 2017-10-16-gradient-descent-part-1 %}#algorithm
 [2]: https://en.wikipedia.org/wiki/Random-access_memory

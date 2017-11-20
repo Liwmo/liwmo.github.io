@@ -108,7 +108,7 @@ We can condense steps 2 and 3 by defining the following "move" probability:
 
 $$ P_{move} = \min{\bigg( \frac{P(\theta_{prop})}{P(\theta_{curr})}, 1 \bigg)}.$$
 
-Note that we merely need to calculate the *unnormalized* posterior distribution $$P(\theta) \propto p(D,\theta)p(\theta)$$. As long as the likelihood and prior are easy to compute, there's no need to slog through the evidence $$p(D)$$ (and yes, the capital/lowercase notation is a tad confusing). At this point you might say, "This seems like voodoo magic; prove that it works." Fair enough. Allow me to fill in *some* of the missing details:
+Note that we merely need to calculate the *unnormalized* posterior distribution $$P(\theta) \propto p(D \vert \theta)p(\theta)$$. As long as the likelihood and prior are easy to compute, there's no need to slog through the evidence $$p(D)$$ (and yes, I realize the capital/lowercase notation is a tad confusing). At this point you might say, "This seems like voodoo magic; prove that it works." Fair enough. Allow me to fill in *some* of the missing details:
 
 <img src="/assets/images/mcmc_3.png"/>
 <img src="/assets/images/mcmc_4.png"/>
@@ -148,7 +148,7 @@ Now, read the story [here][11] and observe how Mr. Holmes cracks the code with a
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@Liwmo/Substitution-Cipher-Metropolis-Algorithm?lite=true"></iframe>
 
-In case you want a challenge, here's a longer message to decipher below. Fair word of warning: if you blindly assign each new symbol you encounter to a letter, you're going to run out of letters. The explanation is given in the passage, so I strongly suggest reading it first. Even if you can figure out "the trick" yourself, I'd still recommend reading the story for fun. 
+In case you want a challenge, here's a longer message to decipher below. Fair word of warning: if you blindly assign each new symbol you encounter to a letter, you're going to run out of letters. The explanation is given in the passage, so I strongly suggest reading it first. Even if you can figure out "the trick" yourself, read the story for fun! 
 
 <img src="/assets/images/ciphertext.png"/>
 

@@ -7,10 +7,10 @@ categories: Education Programming
 tags: algorithms    
 excerpt_separator: <!--more-->
 ---
-In middle school, there was a rather popular website kids went to called [Cool Math Games][1] (don't worry, it's not terribly sketchy). Anyway, I forget the specific details, but I do recall having a bit of "independent time" to work on educational-related things, and one student assured our teacher that the site was indeed, *educational*. When she found out that learning consisted of [Bloons Tower Defense][2] and other nonsense, well...let's just say that was the end of that. Yet, despite this incident, my 6th grade teacher remains one of the most influential and amazing educators I've had. Also, Cool Math Games did have some information on mathematics such as an article on combinatorics I tried skimming over at the time. I gave up upon encountering $$ n \choose k $$, kind of like how I recently struggled through an entire day trying to understand [tensors][3].
+In middle school, there was a rather popular website kids went to called [Cool Math Games][1] (don't worry, it's not terribly sketchy). Anyway, I forget the specific details, but I do recall having a bit of "independent time" to work on educational-related things, and one student assured our teacher that the site was indeed, *educational*. When she found out that learning consisted of [Bloons Tower Defense][2] and other nonsense, well...let's just say that was the end of that. Yet, despite this incident, my 6th grade teacher remains one of the most influential and amazing educators that I've had. Also, Cool Math Games did have some information on mathematics such as an article on counting I tried skimming over at the time. I gave up upon encountering $$ n \choose k $$, kind of like how I recently struggled through an entire day trying to understand [tensors][3].
 <!--more-->
 
-So, to make up for the lack of math and revisit the joys of childhood, I present to you one of my personal favorites: [Coffee Shop][4]. Go ahead and give it a whirl down below. It's important that you play through at least a few in-game days to make sense of the analysis below (and I apologize in advance for the lack of volume controls; mute the tab if desired). 
+So, to make up for the lack of math and to revisit the joys of childhood, I present to you one of my personal favorites: [Coffee Shop][4]. Go ahead and give it a whirl down below. It's important that you play through at least a few in-game days to make sense of the analysis below (and I apologize in advance for the lack of volume controls; mute the tab if desired). 
 
 <div style="text-align: center"><object type="application/x-shockwave-flash" data="//www.coolmath-games.com/sites/cmatgame/files/games/coffeeshop-coolmath-1.swf" id="swfObjID" width="640" height="480" align="middle"><param name="allowScriptAccess" value="always"><param name="movie" value="coffeeshop-coolmath-1.swf"><param name="menu" value="false"><param name="quality" value="high"><param name="wmode" value="direct"></object></div><br>
 
@@ -107,7 +107,7 @@ To test your understanding, let's take a short field trip to the French Alps.
 
 Once you're satisfied with your score, try implementing gradient descent in "main.py" [above](#code). Don't forget to set a few learning rates, plot the cost versus number of iterations (already done for you), and compare the results! 
 
-Fortunately, in the time it took to wade through that explanation, our coffee has cooled enough to analyze and I've covered all the technical tools needed to do so. Next time, we'll go into the interesting details and finally reveal a winning strategy. Along the way, we'll walk through multivariable regression, stochastic gradient descent, and data standardization. Until then, enjoy this visualization I made encapsulating the main ideas.
+Fortunately, in the time it took to wade through that explanation, our coffee has cooled enough to analyze and I've covered all the technical tools needed to do so. Next time, we'll go into the interesting details and finally reveal a winning strategy (edit: [it's posted][5]!). Along the way, we'll walk through multivariable regression, stochastic gradient descent, and data standardization. Until then, enjoy this visualization I made encapsulating the main ideas.
 
 <script src="https://www.khanacademy.org/computer-programming/gradient-descent-visualization/5485161012199424/embed.js?editor=yes&buttons=no&author=no&embed=yes"></script>
 
@@ -115,3 +115,4 @@ Fortunately, in the time it took to wade through that explanation, our coffee ha
 [2]: https://www.coolmath-games.com/0-bloons-tower-defense-1
 [3]: https://en.wikipedia.org/wiki/Tensor
 [4]: http://www.coolmath-games.com/0-coffee-shop
+[5]: {% post_url 2017-11-07-gradient-descent-part-2 %}
