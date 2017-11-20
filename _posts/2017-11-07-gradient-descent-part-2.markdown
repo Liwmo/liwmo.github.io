@@ -133,7 +133,7 @@ The proof is in the pudding, and clearly, it was good pudding. I recommend [tryi
 
 P.S. Here's the product in real life. For the purist, this recipe may sound like an abomination; don't worry, all I can find is cheap instant coffee. To make it Vietnamese style, substitute sugar with condensed milk. I give it 7/10 for taste. 
 
-<img src="/assets/images/coffee.JPG" width="680px"/>
+<img src="/assets/images/coffee.jpg" width="680px"/>
 
 However, when we factor in the Starbucks-inspired price, it's most certainly a ripoff. Nonetheless, our virtual customers seem to enjoy it, so to each their own. Until next time.
 
