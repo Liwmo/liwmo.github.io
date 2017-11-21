@@ -3,9 +3,23 @@ layout: default
 ---
 
 <div class="well article">
+
+<div class="alert alert-info" id="search-container">
+  <input type="text" id="search-input" placeholder="search...">
+  <ol id="results-container"></ol>
+</div>
+<script src="{{ site.baseurl }}/simple-jekyll-search.min.js"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>
+
 {% assign sortedtags = site.tags | sort %}
 {% for tag in sortedtags %}
-    <h2>{{ tag[0] | capitalize }}</h2>
+    <h2>{{ tag[0] }}</h2>
     <ul>
         {% assign pages_list = tag[1] %}
         {% for node in pages_list %}

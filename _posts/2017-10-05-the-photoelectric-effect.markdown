@@ -3,8 +3,8 @@ layout: post
 comments: true
 title:  "The Photoelectric Effect"
 date:   2017-10-05 14:10:51 +0800
-categories: Education Physics
-tags: physics lab education demo
+categories: Tutorials
+tags: ['physics', 'lab', 'education', 'photoelectric effect', 'khan academy', 'history']
 excerpt_separator: <!--more-->
 ---
 A while back, I created [a small demo][1] on Khan Academy. Since I've decided to use this blog to post educational material (and other things that I have yet to decide on), I figured that I may as well take the time to share and flesh out a mini lesson plan. Of course, after I found a way to embed Processing.js, I realized that the default angle mode is in radians while Khan Academy defaults to degrees. As a result, the CodePen snippet below has some hacky-looking modifications from the original, but it's mostly identical. Either way, this is a good reminder to 1.) use radians from now on, and 2.) work on factoring out more constant variables so that I don't have to go on a programmer's version of hide-and-go seek. With that mental note out of the way, onto the lab!

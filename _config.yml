@@ -24,7 +24,7 @@ permalink: /:day/:month/:year/:title
 
 highlighter: rouge
 markdown: kramdown
-gems: ['jekyll-paginate']
+plugins: ['jekyll-paginate']
 disqus: warrenli-me
 comments: true
 exclude: ['README.md', 'LICENSE', "*.bak"]

@@ -3,8 +3,8 @@ layout: post
 comments: true
 title:  "A Bayesian gambling problem"
 date:   2017-10-20 14:10:51 +0800
-categories: Statistics Math Education
-tags: statistics bayesian math education 
+categories: Tutorials
+tags: ['statistics', 'bayesian', 'math', 'education', 'slots', 'gambling', 'casino', 'scratch']
 excerpt_separator: <!--more-->
 ---
 

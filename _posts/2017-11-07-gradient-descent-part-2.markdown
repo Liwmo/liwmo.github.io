@@ -3,8 +3,8 @@ layout: post
 comments: true
 title:  "Finding the perfect cup of coffee with gradient descent (part 2)"
 date:   2017-11-07 14:10:51 +0800
-categories: Programing Education
-tags: algorithms programming 
+categories: Tutorials
+tags: ['algorithms', 'machine learning', 'programming', 'coding', 'gradient descent', 'coffee', 'regression', 'math']  
 excerpt_separator: <!--more-->
 ---
 

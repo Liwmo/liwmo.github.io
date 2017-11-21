@@ -3,8 +3,8 @@ layout: post
 comments: true
 title:  "Finding the perfect cup of coffee with gradient descent (part 1)"
 date:   2017-10-16 14:10:51 +0800
-categories: Education Programming
-tags: algorithms    
+categories: Tutorials
+tags: ['algorithms', 'machine learning', 'programming', 'coding', 'gradient descent', 'math', 'coffee', 'regression', 'khan academy']  
 excerpt_separator: <!--more-->
 ---
 In middle school, there was a rather popular website kids went to called [Cool Math Games][1] (don't worry, it's not terribly sketchy). Anyway, I forget the specific details, but I do recall having a bit of "independent time" to work on educational-related things, and one student assured our teacher that the site was indeed, *educational*. When she found out that learning consisted of [Bloons Tower Defense][2] and other nonsense, well...let's just say that was the end of that. Yet, despite this incident, my 6th grade teacher remains one of the most influential and amazing educators that I've had. Also, Cool Math Games did have some information on mathematics such as an article on counting I tried skimming over at the time. I gave up upon encountering $$ n \choose k $$, kind of like how I recently struggled through an entire day trying to understand [tensors][3].

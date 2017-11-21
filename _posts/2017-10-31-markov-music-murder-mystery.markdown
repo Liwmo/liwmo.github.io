@@ -3,8 +3,8 @@ layout: post
 comments: true
 title:  "Markov music murder mystery"
 date:   2017-10-31 14:10:51 +0800
-categories: Programming Statistics Math
-tags: markov music education math statistics
+categories: Tutorials
+tags: ['markov chains', 'monte carlo', 'bayesian', 'statistics', 'music', 'education', 'math', 'literature', 'sherlock holmes', 'metropolis', 'algorithms', 'scratch']
 excerpt_separator: <!--more-->
 ---
 
