@@ -14,7 +14,7 @@ If you've been in a computer science class, you're bound to hear someone complai
 
 *Old-Fashioned Professor: "This is an important and fundamental skill--think about the job interviews!"*
 
-That's a fair argument. For instance, there are plenty of books and articles about technical interviews and this video to guide applicants towards that coveted position at Google:
+Fair enough. For instance, there are plenty of books and articles about technical interviews and this video to guide applicants towards that coveted position at Google:
 
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XKu_SEDAykw?rel=0" frameborder="0" allowfullscreen></iframe></div>
@@ -24,7 +24,7 @@ On the contrary, you also occasionally come across this,
 
 <img src="/assets/images/handcode_1.jpg"/>
 
-which is less justified. For context, this was part of the first test (75 points total) for a second-year [OOP][1] class that follows an introductory course and a data structures course. The task was to simply rewrite a `for` loop using `do while`, and yes, the remaining questions were less trivial. Anyway, here's an excerpt from the end-of-year course evaluation:
+which is less justified. For context, this was from the first test (75 points total) for a second-year [OOP][1] class that follows an introductory course and a data structures course. The task was to simply rewrite a `for` loop using `do while`, and yes, the remaining questions were less trivial. Anyway, here's an excerpt from the end-of-year course evaluation:
 
 >...Perhaps I have the wrong impression of this course, but I always imagined it as more conceptual. However, the exam scoring, although mostly fair, does not always reflect this. For example, taking off points for a missing semicolon seems like overkill. If this were CS1250 and someone wrote `if(yada yada condition);` then I could see why that would be a conceptual problem. However, if someone writes the following:
   `int num = 0;
@@ -43,7 +43,7 @@ Loosely mimicking a flipped-classroom model, students would go though a majority
 
 The first few projects were fairly tame, but it didn't take long before I noticed issues brewing in the horizon. Specifically, when students were finished, I tried gently probing them with a few questions such as why did you use A instead of B? What does this function do? Can you walk me through your code? Some were able to discuss their process, but I also had a non-zero amount of blank stares, and some refreshingly honest answers like, "Dude, I have no clue what I did. I just kept typing stuff until the errors went away." 
 
-In all fairness, experimenting around is a great way to learn. My earliest exposure to programming involved playing around with KTurtle years ago, which is an educational programming environment with a language based on [Logo][3]. During this "phase", I attempted an Oregon Trail knock-off as well as a half-finished calculator for computing "taxes" that I wanted to collect from my cousin's account on my Animal Crossing game. The spaghetti code resembled something like this:
+In all fairness, experimenting around is a great way to learn. My earliest exposure to programming involved playing around with KTurtle years ago, which is an educational programming environment that uses a language based on [Logo][3]. During this phase, I attempted an Oregon Trail knockoff as well as a half-finished calculator for computing "taxes" that I wanted to collect from my cousin's account on my Animal Crossing game. The spaghetti code resembled something like this:
 
 ```php
 if $a == 'apple' {
@@ -72,17 +72,17 @@ if $a == 'orange' {
 
 Somewhat functional, but ugly and hard to modify. Perhaps, I would have eventually developed more descriptive variable names and organizational skills, but sometimes, light guidance in an open sandbox can help accelerate the learning process tremendously.
 
-With that in mind, let's return to LaunchCode. I decided to have the class split into four groups. To provide a diagnosis, I passed out a "quiz" to one group (it wasn't graded, although some were uneasy with the "no computers" rule), and then helped out other students with the in-class project. Afterwards, I would return to the quiz group and discuss questions, misconceptions, and so forth before repeating this procedure with the remaining groups. Of course, it took some gesture reading and words of encouragement to ensure everyone was on the same page, but generally, the small groups seemed to alleviate students' reservations about sharing wrong answers.
+With that in mind, let's return to LaunchCode. I decided to have the class split into four groups. To provide diagnostics, I passed out a "quiz" to one group (it wasn't formally graded, though some were uneasy with the "no computers" rule), and then helped out other students with the in-class project. Afterwards, I would return to the quiz takers and discuss questions, misconceptions, and so forth before repeating this procedure with the remaining groups. Of course, it took some gesture reading and words of encouragement to ensure everyone was on the same page, but generally, the small circle seemed to alleviate students' reservations about sharing wrong answers.
 
 Here's a sample:
 
 <img src='/assets/images/handcode_2.jpg' width='80%'/>
 
-The key concept is that `return` will immediately exit out of the function, and so the `print` statement below is effectively *invisible*. Get the joke? Anyway, when I asked for feedback, many students expressed that these exercises were very helpful and requested more, thus I had a rather [fun time writing them][6]. 
+The key concept is that `return` will immediately exit out of the function, and so the `print` statement below is effectively *invisible* (get the joke‽). Anyway, when I asked for feedback, many students expressed that these exercises were very helpful and requested more, thus I had a rather [fun time writing them][6]. 
 
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vRGqgtVUQF5Erze-UU_I1IH34KYuRblxZXkoISz8REHYZOhPtqGtTI9uZClAwt-FVhJTTx0oFJhd76K/pub?embedded=true" width="100%" height="500px"></iframe>
 
-I also have a link to the [Thanksgiving edition][4], and the [Polar Express Christmas edition][5], which ramps up in difficulty just a tad. The objective of the final quiz of the semester was to provide some practice with classes and inheritance, which I admit, was pretty rushed. As a result, I also made my first teaching video. It's somewhat embarrassing, but I thought I'd share:
+I also have a link to the [Thanksgiving edition][4], and the [Polar Express Christmas edition][5], which ramps up in difficulty just a tad and involves writing a few lines. The objective of the final quiz of the semester was to provide some practice with classes and inheritance, especially since we were feeling rushed. As a result, I also made my first teaching video. It's somewhat embarrassing, but I thought I'd share:
 
 <div style="text-align: center">
 <iframe src="https://drive.google.com/file/d/0Bxka66Mq1AW0bzR5QjlyNWd2T0E/preview" width="560" height="315"></iframe></div>
