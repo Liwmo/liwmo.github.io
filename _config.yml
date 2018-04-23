@@ -2,15 +2,15 @@
 
 name: Warren Li
 description: >
-  <p>Welcome to a dish on education.<br/>
-  A dash of science and a pinch of math,</p>
+  <p>Sample a dish on education:<br/>
+  a dash of science and a pinch of math,</p>
 
-  <p>emulsified music & molecular gastronomy,<br/>
-  for clueless me–I have no recipe.<br/></p>
+  <p>emulsified with music & faux gastronomy,<br/>
+  for scattered me–I used no recipe.<br/></p>
 
-  <p>Browse and find a delectable composition,<br/>
-  but if not, at least a palatable aftermath<br/>
-  served alongside tea.</p>
+  <p>Browse a delectable composition,<br/>
+  or if not, a palatable aftermath,<br/>
+  served with complementary figurative tea.</p>
 
 # url is currently only used only for the RSS feed in feed.xml
 url: https://github.com/Liwmo

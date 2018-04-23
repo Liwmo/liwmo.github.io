@@ -58,7 +58,7 @@ Hertz concluded that "...I confine myself at present to communicating the result
 
 2. On the other end is an electron collector. Notice that it's positively charged so that electrons will be attracted to it. This can be accomplished by hooking up a variable power supply in series with the circuit shown below. Let's just pretend it's already hidden behind the ammeter.
 
-3. If you need to reset everything to the initial setup, don't worry, we've hired a lab assistant. Simply click the "rerun" button in the lower right corner. 
+3. If you need to reset everything to the initial setup, don't worry, we've hired a lab assistant. Simply click the "rerun" button in the lower right corner.
 
 ---
 
