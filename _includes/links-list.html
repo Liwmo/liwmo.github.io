@@ -1,14 +1,15 @@
 <h1 class="sidebar-custom">Links</h1>
-<ul>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <li><a href="#">One</a></li>
   <li><a href="#">Two</a></li>
   <li><a href="#">Three</a></li>
   <li><a href="#">Four</a></li> -->
   {% for link in site.data.links %}
   <li style="list-style: none;">
-    <a href="{{ link.url }}">
-      <img src="/assets/images/{{ link.src }}">
+    <a href="{{ link.url }}" style="text-decoration: none">
+      <button type="button" class="btn btn-primary btn-block" style="text-align: left"><i class="{{ link.icon }} fa-fw"></i> {{ link.name }}</button>
+      <!-- <img src="/assets/images/{{ link.src }}"> -->
     </a>
-  </li> 
+  </li>
   {% endfor %}
-</ul>
