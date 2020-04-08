@@ -54,7 +54,7 @@ body {
 /* Xixia logo */
 .sidebar-header {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .container-left {
@@ -69,7 +69,7 @@ body {
 
 .article img {
     max-width:100%;
-    display: block; 
+    display: block;
     margin: 0 auto;
 }
 
@@ -103,9 +103,9 @@ body {
     opacity: 1;
 }
 
-/* 
+/*
     custom bootstrap navbar
-    reference from: https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3 
+    reference from: https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
 */
 .navbar-custom {
     background-color: $nav-bar-background-color;

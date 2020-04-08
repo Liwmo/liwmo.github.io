@@ -1,16 +1,11 @@
 # Jekyll configuration
 
 name: Warren Li
-description: >
-  <p>Sample a dish on education:<br/>
-  a dash of science and a pinch of math,</p>
+description:
+  <p>PhD Student</p>
 
-  <p>emulsified with music & faux gastronomy,<br/>
-  for scattered me–I used no recipe.<br/></p>
-
-  <p>Browse a delectable composition,<br/>
-  or if not, a palatable aftermath,<br/>
-  served with complementary figurative tea.</p>
+  <p>University of Michigan<br/>
+  School of Information</p>
 
 # url is currently only used only for the RSS feed in feed.xml
 url: https://github.com/Liwmo
@@ -21,7 +16,7 @@ url: https://github.com/Liwmo
 #     run it like so: jekyll serve --baseurl=''
 baseurl: ''
 ## default date_format
-date_format: 
+date_format:
   title: "%B-%-d-%Y"
   archive: "%b"
   categories: "%b, %Y"
