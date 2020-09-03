@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Thinking About Thinking in the Wake of COVID-19 (Part 1)"
+title:  "Thinking About Thinking in the Wake of COVID-19"
 date:   2020-06-03 14:10:51 +0800
 categories: Research
 tags: ['covid', 'pandemic', 'metacognition', 'knowledge tracing', 'deep learning', 'SRL']
@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 It's been quite a while since I've updated this website (and blog), but I suppose there's
 no better excuse than a pandemic to find new hobbies and restart old projects. Since I first shared the educational materials on this site, I've apparently been grad school for over 2 years (time flies!) and, as part of my candidacy requirements, have both the great burden and opportunity to dig into an area of interest of my choosing. In other words, to concoct a massive literature review and research design, in what I presume will be written in much more formal language than what I'll be presenting here.
 
-I hope that the act of writing consistent blog posts will help me along this ride by forcing myself to maintain some semblance of routine during these unprecedented times, reduce the pressure of needing to generate what I (irrationally) perceive to be a high-stakes perfected document, help me organize my thoughts and inch closer to what it precisely is that I am interested in researching, disseminate this information as part of what the NSF calls "broader impact" (but also because I genuinely do want to make these resources publicly available), and last but not least, better ground my thoughts to real-life solutions and the roots of why advancing education is such an important personal matter.
+I hope that the act of writing a blog post will help me along this ride by forcing myself to maintain some semblance of routine during these unprecedented times, reduce the pressure of needing to generate what I (irrationally) perceive to be a high-stakes perfected document, help me organize my thoughts and inch closer to what it precisely is that I am interested in researching, disseminate this information as part of what the NSF calls "broader impact" (but also because I genuinely do want to make these resources publicly available), and last but not least, better ground my thoughts to real-life solutions and the roots of why advancing education is such an important personal matter.
 
 As for the intended audience, I think these will be for myself as much as it is for my advisor, which hopefully will not be overly irritating given the stark contrast with my typical academic writing style largely devoid of the "fluff" included in these opening paragraphs, and admit that I like incorporating literary flair on occasion despite the fact that growing up, English was my least favorite subject and any job involving writing was beyond my wildest dreams.
 
@@ -34,7 +34,7 @@ Note that we must utilize knowledge, which I'll loosely define as "information a
 
 So, in the example above, we have mainly focused on "remembering" and "understanding", and even then there are quite a few moving gears in the contraption. Perhaps it can be argued that people also "apply" this knowledge when using the figure as evidence for a talking point online. Although, if the facts are incorrectly recalled or misinterpreted then the action is more likely reinforcing an incorrect mental model. This also does not account for analysis and evaluation of the argument, which is necessary and insightful but often overshadowed by instinctual reactions and emotions. To dive deeper into what I mean, the "number of sick people" is actually rather difficult to understand as this is represented by the area under the curve or a sum of the number of people sick captured across a series of time slices (and invoking calculus is always fun even if there's nothing to explicitly compute). Assuming all that knowledge registers, we might then ask questions such as whether or not the total number of infected people will decrease as a result of preventative measures, or whether this metric will be approximately the same with cases simply spread over time to avoid overloading hospital capacity. Likewise, one might begin to "evaluate" the model and ask if the capacity is fixed. More health care workers might become sick as there are more patients, or more temporary facilities may be constructed which might yield a slight boost and morph the horizontal threshold, and interestingly enough, all of this only scratches the surface regarding translation in terms of realistic societal consequences (e.g. overloaded hospitals effects on treatment of other ailments and overall public trust) and practical potential actions (e.g. weighing who gets treatment, balancing personal protections, and anticipating public response).
 
-However, if people already have a hypothesis in mind, it can be difficult to sway our own minds contrary to the status quo thereby impeding our ability to analyze/evaluate with sufficient breadth and depth. This is especially the case when we have a particularly invested interest in something or when topics which elicit visceral reactions such as politics or personal family matters. Putting aside affect for now, say we can identify pieces of the graph but do not necessarily comprehend what we're seeing (not moving past the second level of the taxonomy), then it becomes almost impossible to have an informed opinion unless we're able to judge our own understanding, identify this gap in knowledge, know how and where to fill this hole, have the strategies to learn from other sources, and actually muster up the motivation to set these plans in motion. In other words, knowing and thinking are often not enough; we need "thinking about thinking," or in other words, metacognition.
+However, if people already have a hypothesis in mind, it can be difficult to sway our own minds contrary to the status quo thereby impeding our ability to analyze/evaluate with sufficient breadth and depth. This is especially the case when we have a particularly invested interest in something or when topics which elicit visceral reactions such as politics or personal family matters. Putting aside affect for now, say we can identify pieces of the graph but do not necessarily comprehend what we're seeing (not moving past the second level of the taxonomy), then it becomes almost impossible to have an informed opinion unless we're able to judge our own understanding, identify this gap in knowledge, know how and where to fill this hole, have the strategies to learn from other sources, and actually muster up the motivation to set these plans in motion. In other words, knowing and thinking are often not enough; we need "thinking about thinking," or in other words, metacognition. But, I'll leave that for another time and instead share this cellular automata simulation of an epidemic and a great video of exploratory analysis on this topic as well.
 
 <style>
 #iframe-wrapper {
@@ -56,28 +56,6 @@ However, if people already have a hypothesis in mind, it can be difficult to swa
 
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gxAaO2rsdIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-Admittedly, there will always be some level of subjectivity when grading, and some may not agree with the exact analysis above. Nonetheless, it's important not to lose sight of the forest for the trees (or some other cliché of your choice). To illustrate, even the [AP Computer Science grading guidelines][2] seem to agree with this view (see the "No Penalty" section on page 2). The purpose of an assessment is to *assess*, not to conduct a number-generating ritual. When used correctly, it can provide insight into student learning and guide one's teaching. Of course, the big question is whether hand writing code is actually a helpful measure, and if so, how do we design good questions? I certainly can't claim to have absolute answers to any of these questions, but I can share some relevant stories.
-
-----------------------------------------------
-
-As a student, I too was unsurprisingly skeptical when it came to hand writing code. Yet, my stance shifted when I taught my first course for LaunchCode. Long story short, I met biweekly with a group of roughly 20 students from various backgrounds who had little to no coding experience. The first unit of the program covered essentials such as variables, operators, control structures, etc.
-
-Loosely mimicking a flipped-classroom model, students would go though a majority of the prep work and instruction at home, come in for an auditorium-style lecture, and then split up into respective classroom-sized groups. At that point, we (the teaching fellows) would handle things on our own accord. We were provided in-class materials for each session. Consequently, I would read it over, maybe make a few comments or adjustments, and then encourage everyone to form groups with varying degrees of success (more on this in a later post). After allowing everyone some time to figure things out, I would start making my way around the classroom, trying my best to speak with each and every student.
-
-<img src="/assets/images/handcode_3.png"/>
-
-The first few projects were fairly tame, but it didn't take long before I noticed issues brewing in the horizon. Specifically, when students were finished, I tried gently probing them with a few questions such as why did you use `elif` instead of `else`? What does this function do? Can you walk me through your code? Some were able to discuss their process, but I also had a non-zero amount of blank stares, and some refreshingly honest answers like, "Dude, I have no clue what I did. I just kept typing stuff until the errors went away."
-
-References:
-<div id="references">
-    <ul>
-        <li id='one'>TEST 1</li>
-        <li id='two'>TEST 2</li>
-        <li id='three'>TEST 3</li>
-        <li id='four'>TEST 4 </li>
-    </ul>
-</div>
 
 [1]: http://pact.cs.cmu.edu/pubs/2001_NathanEtAl_ICCS_EBS.pdf
 [2]: https://opentext.wsu.edu/psych105/chapter/7-2-what-is-cognition/
