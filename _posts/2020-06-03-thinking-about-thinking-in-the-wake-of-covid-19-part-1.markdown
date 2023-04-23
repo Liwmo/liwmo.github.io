@@ -9,13 +9,9 @@ excerpt_separator: <!--more-->
 ---
 
 It's been quite a while since I've updated this website (and blog), but I suppose there's
-no better excuse than a pandemic to find new hobbies and restart old projects. Since I first shared the educational materials on this site, I've apparently been grad school for over 2 years (time flies!) and, as part of my candidacy requirements, have both the great burden and opportunity to dig into an area of interest of my choosing. In other words, to concoct a massive literature review and research design, in what I presume will be written in much more formal language than what I'll be presenting here.
+no better excuse than a pandemic to find new hobbies and restart old projects. Since I first shared the educational materials on this site, I've apparently been grad school for over 2 years (time flies!) and, as part of my candidacy requirements, have both the great burden and opportunity to dig into an area of interest of my choosing. I hope that the act of writing a blog post will help me organize my thoughts and inch closer to what it precisely is that I am interested in researching, and serve dual purpose as a somewhat tactful time capsule of my personal and professional thoughts.
 
-I hope that the act of writing a blog post will help me along this ride by forcing myself to maintain some semblance of routine during these unprecedented times, help me organize my thoughts and inch closer to what it precisely is that I am interested in researching, and last but not least, better ground my thoughts to real-life solutions and why advancing education is such an important matter.
-
-I hope these snippets will serve dual purpose as a somewhat tactful time capsule of my personal and professional thoughts, as well as a meaningful contribution of synthesized knowledge regarding educational technology literature.
-
-Now with that complete, I'll move on to our main motivation: the current pandemic, which is really just a backdrop for a discussion into metacognition, how people think, and how we teach people to think. While I've used COVID to tether the discussions here, cognition and metacognition can certainly relate to many more commentaries on any number of things on my (or your) mind. Roughly 3 months ago, when much of the lockdowns were first imposed, a friend and I were discussing the diagram below:
+Now with that complete, I'll move on to our main motivation: synthesizing knowledge regarding metacognition, in which the current pandemic will serve as a backdrop for this discussion about how people think and how we teach people to think. But, cognition and metacognition can (obviously) relate to many more things on my (or your) mind. Roughly 3 months ago, when much of the lockdowns were first imposed, a friend and I were discussing the diagram below:
 
 <img src="/assets/images/coronavirus_flattening_curve.jpg"/>
 <!--more-->
