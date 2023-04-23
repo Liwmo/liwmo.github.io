@@ -1,40 +1,37 @@
 ---
 layout: default
 ---
+<style media="screen">
+  .about {
+    font-size: 14pt;
+  }
+</style>
 
-{% for post in paginator.posts %}
-<div class="article" style='opacity:.9'>
-    <div class="well">
+<div class="well">
+    <h1>Welcome!</h1>
 
-        <span class="post-date">
-            {% assign date_format = site.date_format.title %}
-            {{ post.date | date: date_format }}
-        </span>
-        
-        <h2>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        
-        <div class="post-description">
-            {{ post.excerpt }}
-            {{ post.image}}
-        </div>
+    <p class="about">I'm a PhD candidate in the School of Information at the
+      University of Michigan. As part of the Educational Technology Collaborative
+      lab group (link in the side bar), my research lies at the intersection of
+      technology and education.</p><br>
 
-        
-    </div>
-</div>
-{% endfor %}
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTo0XeEvS2a-l_twOgVUaG6lTttWtBxCKUlXqMaL_0WtXs7TY8JuCWeVeCjrE6SrT7u4YgZtPQ1KVye/embed?start=false&loop=false&delayms=3000" frameborder="0" width="4608" height="3485" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <br>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
-      {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
-      {% endif %}
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
-  {% endif %}
+   <p class="about">Specifically, I explore the interaction between how people use machine learning
+      and AI systems to make decisions, and how that affects both computer models
+      and educational outcomes. I've analyzed the effects on grade predictive models when 
+      students choose to opt-out of sharing their data, and also seek to better understand 
+      learners' privacy perceptions surrounding these decisions. My current work centers 
+      around AI-generated explanations and how that influences metacognitive judgements 
+      (summarized in the poster above).</p><br>
+
+   <p class="about">Here, I also share some of the educational content I've created over the years from
+      my experience teaching both in formal and informal settings, as well as research-related
+      musings on education and learning analytics (and occasional miscellany). 
+      For details about my papers and projects, click the links above, and take a look at my guest lecture <a href="https://youtu.be/hEnNJDaWY1c">here</a>.
+      (on <a href="https://www.coursera.org/learn/politics-and-ethics-of-data-analytics-in-the-public-sector?specialization=data-analytics-in-the-public-sector-with-r#modules">Coursera as part of UM's Data Analytics in the Public Sector with R Specialization</a>).
+    </p>
+
+
 </div>
