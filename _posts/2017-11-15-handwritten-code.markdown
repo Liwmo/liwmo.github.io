@@ -17,7 +17,7 @@ If you've been in a computer science class, you're bound to hear someone complai
 Fair enough. For instance, there are plenty of books and articles about technical interviews and this video to guide applicants towards that coveted position at Google:
 
 <div style="text-align: center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XKu_SEDAykw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/XKu_SEDAykw?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <!--more-->
 
 On the contrary, you also occasionally come across this,
