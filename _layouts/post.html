@@ -85,9 +85,9 @@ layout: default
 </div>
   <div class="pagination">
       {% if page.previous %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
+        <a class="btn btn-default" href="{{ site.baseurl}}/blog/{{ page.previous.url }}" class="previous">Older Post</a>
       {% endif %}
       {% if page.next %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
+        <a class="btn btn-default" href="{{ site.baseurl}}/blog/{{ page.next.url }}" class="next">Newer Post</a>
       {% endif %}
   </div>
