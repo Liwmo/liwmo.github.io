@@ -18,7 +18,7 @@ If you receive the award, you are required to submit a yearly update. This invol
 
 Since I'm nearing graduation and in my last year of the program, I thought it would be nice to publicly post the updates I've written up over the years (which also counts as a broader impact I suppose). Hopefully this will be helpful to others and also be a good summary of my activities over the past few years of my academic career (which will be transitioning into some other career TBD later). Here is the most recent one: 
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vSWlFSRv8Qn0gslXkTFrey7rfjE3ffezVDpIGYYIWffI3vjQKRuAbnnzBbZBayUvGEFbwl1F7JwA6si/pub?embedded=true"></iframe>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSWlFSRv8Qn0gslXkTFrey7rfjE3ffezVDpIGYYIWffI3vjQKRuAbnnzBbZBayUvGEFbwl1F7JwA6si/pub?embedded=true" width="100%" height="650px"></iframe>
 
 ...And the links to the previous years are below:
 
@@ -34,3 +34,4 @@ Lastly, in some of my updates I reference materials that I have posted online. M
 [1]: https://drive.google.com/file/d/1g6OKMa5_-0o9eiTKrhCLCqX4XzHfPNPH/view?usp=sharing
 [2]: https://drive.google.com/file/d/1MTcHM1fpwlJvdCHI_Cn7x1CHBEOLDgbv/view?usp=sharing
 [3]: https://drive.google.com/file/d/1R06UKzG9ZYYZw0riYSGWneQ0UnAKuT4h/view?usp=sharing
+[4]: {% post_url 2022-11-09-first-time-teaching %}
